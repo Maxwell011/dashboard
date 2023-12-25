@@ -4,7 +4,7 @@ const TopSelling = () => {
   return (
     <>
       <Box>
-        <h1>Top Selling</h1>
+        <Text fontSize={12}>Top Selling</Text>
         <p>₦ 0.00</p>
         <p>Total Sold</p>
         <div>image</div>
