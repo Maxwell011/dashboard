@@ -3,7 +3,7 @@ import { Text, Box } from "@chakra-ui/react";
 const TopSelling = () => {
   return (
     <>
-      <section>
+      <Box>
         <h1>Top Selling</h1>
         <p>₦ 0.00</p>
         <p>Total Sold</p>
@@ -11,7 +11,7 @@ const TopSelling = () => {
         <h3>None</h3>
         <h3>0</h3>
         <p>Whole units sold</p>
-      </section>
+      </Box>
     </>
   );
 };
