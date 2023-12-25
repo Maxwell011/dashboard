@@ -36,7 +36,7 @@ const SalesOverview = () => {
         <Box display="flex">
           <Text fontSize={20}>1 Week</Text>
           <Text fontSize={20}>1 Month</Text>
-          <Text>1 Year</Text>
+          <Text fontSize={20}>1 Year</Text>
         </Box>
 
         <Line />
