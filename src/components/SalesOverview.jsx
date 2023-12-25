@@ -114,7 +114,7 @@ const SalesOverview = () => {
                 Withdrawal
               </Text>
               <UpIcon2 />
-              <Text>0%</Text>
+              <Text fontSize={10}>0%</Text>
             </Box>
           </Box>
         </Box>
