@@ -1,3 +1,5 @@
+import { Text, Box } from "@chakra-ui/react";
+
 const TopSelling = () => {
   return (
     <>
@@ -12,5 +14,5 @@ const TopSelling = () => {
       </section>
     </>
   );
-}
-export default TopSelling
+};
+export default TopSelling;
