@@ -1,15 +1,16 @@
 import BookmarkIcon from "@/svg/BookmarkIcon";
 import ImageIcon from "@/svg/ImageIcon";
 import { Text, Box } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 
 const ListingsOverview = () => {
   return (
     <>
       <section>
-        <Box w="475px" h="287px">
-          <Text fontSize={18} color="#191919" fontWeight={600}>
+        <Box w="475px" h="287px" borderRadius="12" bg="#fff">
+          <Heading fontSize={18} color="#191919" fontWeight={600}>
             Listing Overview
-          </Text>
+          </Heading>
 
           <Box>
             <Box display="flex" justifyContent="" flexDirection="row">
@@ -61,7 +62,7 @@ const ListingsOverview = () => {
           <Box w="437px" h="109px" borderRadius="12" backgroundColor="#F5F5F5">
             <Box>
               <h3>Most watchlisted</h3>
-              <Box display="flex" alignItems="flex-start" p="8" gap={25}>
+              <Box display="flex" alignItems="flex-start" p="8" gap={35}>
                 <Box display="flex" justifyContent="center" alignItems="center">
                   <Box
                     w="67px"
@@ -72,7 +73,7 @@ const ListingsOverview = () => {
                     display="flex"
                     borderRadius={12}
                     border="1px"
-                    borderColor="#4545FE"
+                    borderColor="#FF9103"
                   >
                     <ImageIcon width={36} height={36} />
                   </Box>{" "}
