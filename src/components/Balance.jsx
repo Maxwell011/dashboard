@@ -5,7 +5,15 @@ import RightIcon from "@/svg/RightIcon";
 const Balance = () => {
   return (
     <>
-      <Box w="418px" h="287px" borderRadius="12" bg="#fff">
+      <Box
+        w="418px"
+        h="287px"
+        borderRadius="12"
+        bg="#fff"
+        display="flex"
+        alignItems="flex-start"
+        flexDirection="column"
+      >
         <Box
           display="flex"
           justifyContent="space-between"
@@ -42,9 +50,11 @@ const Balance = () => {
               None
             </Text>
             <Text fontSize={16} color="#FF6A6A">
-            ₦ 0.00
+              ₦ 0.00
             </Text>
-            <Text fontSize={12} color="#606060">Outstanding Balance</Text>
+            <Text fontSize={12} color="#606060">
+              Outstanding Balance
+            </Text>
           </Box>
         </Box>{" "}
       </Box>
