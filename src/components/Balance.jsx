@@ -1,6 +1,7 @@
 import ImageIcon from "@/svg/ImageIcon";
 import { Text, Box } from "@chakra-ui/react";
 import RightIcon from "@/svg/RightIcon";
+import { Heading } from "@chakra-ui/react";
 
 const Balance = () => {
   return (
@@ -17,12 +18,15 @@ const Balance = () => {
         <Box
           display="flex"
           justifyContent="space-between"
-          mb="15px"
+          mb="8px"
           alignItems="center"
         >
-          <Box display="flex" gap={2} color="#191919" fontSize={28}>
-            ₦ 0.00
-          </Box>
+          <Heading as="h1" color="#191919" fontSize={28}>
+            ₦ 0
+            <Heading as="span" color="#CBCBCB" fontSize={28}>
+              .00
+            </Heading>{" "}
+          </Heading>
           <Box display="flex">
             <Text fontSize={12} color="#CBCBCB">
               view all
@@ -30,10 +34,10 @@ const Balance = () => {
             <RightIcon />
           </Box>
         </Box>
-        <Text color="#606060" fontSize={14}>
+        <Text color="#606060" fontSize={14} mb="35px">
           Total Outstanding Balance
         </Text>
-        <Box display="flex" justifyContent="center" alignItems="center" gap={8}>
+        <Box display="flex" alignItems="flex-start" gap={7}>
           <Box
             w="161px"
             h="155px"
@@ -45,16 +49,18 @@ const Balance = () => {
           >
             <ImageIcon width={100} height={100} />
           </Box>
-          <Box>
+          <Box display="flex" flexDirection="column" gap={7}>
             <Text color="#191919" fontSize={20} fontWeight={600}>
               None
             </Text>
-            <Text fontSize={16} color="#FF6A6A">
-              ₦ 0.00
-            </Text>
-            <Text fontSize={12} color="#606060">
-              Outstanding Balance
-            </Text>
+            <Box>
+              <Text fontSize={16} color="#FF6A6A">
+                ₦ 0.00
+              </Text>
+              <Text fontSize={12} color="#606060">
+                Outstanding Balance
+              </Text>
+            </Box>
           </Box>
         </Box>{" "}
       </Box>
