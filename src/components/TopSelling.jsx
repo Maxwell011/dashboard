@@ -25,7 +25,7 @@ const TopSelling = () => {
         <Text color="#606060" fontSize={14} fontWeight="normal">
           Total Sold
         </Text>
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box display="flex" justifyContent="center" alignItems="center" gap={8}>
           <Box
             w="161px"
             h="155px"
