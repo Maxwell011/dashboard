@@ -7,8 +7,8 @@ import { Button } from "@chakra-ui/react";
 const SalesOverview = () => {
   return (
     <>
-      <Box w="856px" h="325px" borderRadius="16" border="2px">
-        <Box display="flex">
+      <Box w="856px" h="325px" borderRadius="16" border="2px" p="5">
+        <Box display="flex" justifyContent="space-between" mb="10">
           <Box display="flex" flexDirection="column">
             <Text color="#191919" fontSize={20}>
               Sales Overview
@@ -29,17 +29,40 @@ const SalesOverview = () => {
             alignItems="center"
             justifyContent="center"
           >
-            Button
+            View Transactions
           </Box>
         </Box>
 
-        <Box display="flex">
-          <Text fontSize={15}>1 Week</Text>
-          <Text fontSize={15}>1 Month</Text>
-          <Text fontSize={15}>1 Year</Text>
+        <Box display="flex" justifyContent="flex-end">
+          <Button
+            colorScheme="f5f5f5"
+            variant="ghost"
+            fontSize={15}
+            color="#3D3D3D"
+          >
+            1 Week
+          </Button>
+          <Button
+            colorScheme="teal"
+            variant="ghost"
+            fontSize={15}
+            color="#3D3D3D"
+          >
+            1 Month
+          </Button>
+          <Button
+            colorScheme="teal"
+            variant="ghost"
+            fontSize={15}
+            color="#3D3D3D"
+          >
+            1 Year
+          </Button>
         </Box>
 
         <Line />
+
+        <Box></Box>
 
         <Box display="flex" gap={3}>
           <Box
