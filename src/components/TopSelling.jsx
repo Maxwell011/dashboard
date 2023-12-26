@@ -1,5 +1,6 @@
 import ImageIcon from "@/svg/ImageIcon";
 import { Text, Box } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 
 const TopSelling = () => {
   return (
@@ -16,16 +17,16 @@ const TopSelling = () => {
         <Text fontSize={16} fontWeight="extrabold" color="#12D8A0">
           Top Selling
         </Text>
-        <Text color="#CBCBCB" fontSize={28}>
-          <span color="#191919" fontSize={28}>
-            ₦ 0
-          </span>
-          .00
-        </Text>
-        <Text color="#606060" fontSize={14} fontWeight="normal">
+        <Heading as="h1" color="#191919" fontSize={28} mt={1} mb={1}>
+          ₦ 0
+          <Heading as="span" color="#CBCBCB" fontSize={28}>
+            .00
+          </Heading>{" "}
+        </Heading>
+        <Text color="#606060" fontSize={14} fontWeight="normal" mb={2}>
           Total Sold
         </Text>
-        <Box display="flex" justifyContent="center" alignItems="center" gap={8}>
+        <Box display="flex" alignItems="flex-start" gap={7}>
           <Box
             w="161px"
             h="155px"
@@ -37,16 +38,18 @@ const TopSelling = () => {
           >
             <ImageIcon width={100} height={100} />
           </Box>
-          <Box>
-          <Text color="#191919" fontSize={20} fontWeight={600}>
-            None
-          </Text>
-          <Text fontSize={16} color="#CBCBCB">
-            0
-          </Text>
-          <Text fontSize={12} color="#606060">
-            Whole units sold
-          </Text>
+          <Box display="flex" flexDirection="column" gap={7}>
+            <Text color="#191919" fontSize={20} fontWeight={600}>
+              None
+            </Text>
+            <Box>
+              <Text fontSize={16} color="#CBCBCB">
+                0
+              </Text>
+              <Text fontSize={12} color="#606060">
+                Whole units sold
+              </Text>
+            </Box>
           </Box>
         </Box>
       </Box>
