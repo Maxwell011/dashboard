@@ -34,9 +34,9 @@ export default function Home() {
             Hi Ahmed
           </Text>
         </Box>
-        <p fontSize={12} color="#3D3D3D">
+        <Text fontSize={12} color="#3D3D3D" mb={8}>
           Welcome to your new dashboard
-        </p>
+        </Text>
         <Box display="flex" gap={5}>
           <SalesOverview />
           <Box display="flex" flexDirection="column" gap={5}>
