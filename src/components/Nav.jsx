@@ -49,7 +49,7 @@ const Nav = () => {
             <Link href="#">Dashboard</Link>
           </Button>
         </Box>
-        <Box display="flex">
+        <Box display="flex" gap={5}>
           {" "}
           <Button colorScheme="black" variant="ghost">
             <LocationIcon />
