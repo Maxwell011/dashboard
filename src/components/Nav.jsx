@@ -13,6 +13,7 @@ import Link from "next/link";
 import { Button } from "@chakra-ui/react";
 import DrawerExample from "./Drawer";
 import CalendarIcon from "@/svg/CalendarIcon";
+import Calendar2Icon from "@/svg/Calendar2Icon";
 
 const Nav = () => {
   return (
@@ -40,7 +41,7 @@ const Nav = () => {
           <DropdownIcon />
         </Box>
       </Box>
-      <Box display="flex" h="67px">
+      <Box display="flex" h="67px" gap={13}>
         <Box display="flex" gap={5}>
           {" "}
           <Button colorScheme="black" variant="ghost">
@@ -72,7 +73,7 @@ const Nav = () => {
         <Box display="flex">
           {" "}
           <Button colorScheme="black" variant="ghost">
-            <CalendarIcon />
+            <Calendar2Icon />
             <Link href="#">Request</Link>
           </Button>{" "}
         </Box>
