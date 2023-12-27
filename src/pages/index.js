@@ -22,32 +22,34 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`} bg="#fbfcfc">
+      <main className={`${styles.main} ${inter.className}`}>
         <Nav />
-        <Box display="flex">
-          <Image
-            objectFit="cover"
-            src="/Rectangle 12749.png"
-            alt="Greeting Icon"
-          />
-          <Text color="#191919" fontSize={20} fontWeight={600}>
-            Hi Ahmed
-          </Text>
-        </Box>
-        <Text fontSize={12} color="#3D3D3D" mb={8}>
-          Welcome to your new dashboard
-        </Text>
-        <Box display="flex" gap={5}>
-          <SalesOverview />
-          <Box display="flex" flexDirection="column" gap={5}>
-            <PropertyOverview />
-            <CustomersOverview />
+        <Box bg="#fbfcfc" py="0" px="35">
+          <Box display="flex">
+            <Image
+              objectFit="cover"
+              src="/Rectangle 12749.png"
+              alt="Greeting Icon"
+            />
+            <Text color="#191919" fontSize={20} fontWeight={600}>
+              Hi Ahmed
+            </Text>
           </Box>
-        </Box>
-        <Box display="flex" gap={5} mt={30}>
-          <ListingsOverview />
-          <Balance />
-          <TopSelling />
+          <Text fontSize={12} color="#3D3D3D" mb={8}>
+            Welcome to your new dashboard
+          </Text>
+          <Box display="flex" gap={5}>
+            <SalesOverview />
+            <Box display="flex" flexDirection="column" gap={5}>
+              <PropertyOverview />
+              <CustomersOverview />
+            </Box>
+          </Box>
+          <Box display="flex" gap={5} mt={30}>
+            <ListingsOverview />
+            <Balance />
+            <TopSelling />
+          </Box>
         </Box>
       </main>
     </>
