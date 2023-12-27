@@ -24,6 +24,8 @@ const Nav = () => {
         display="flex"
         alignItems="center"
         justifyContent="space-between"
+        py="0"
+        px="35"
       >
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Image objectFit="cover" src="inscentive 1.png" alt="veerge image" />
